@@ -6,16 +6,16 @@ console.log(increment.dataset.action);
 
 const value = document.querySelector("#value");
 let counterValue = 0;
-const dec = function () {
+const handlerButtonDecrementClick = function () {
   counterValue -= 1;
   value.textContent = counterValue;
 };
 
-const inc = function () {
+const handlerButtonIncrementClick = function () {
   counterValue += 1;
   value.textContent = counterValue;
 };
 
-decrement.addEventListener("click", dec);
+decrement.addEventListener("click", handlerButtonDecrementClick);
 
-increment.addEventListener("click", inc);
+increment.addEventListener("click", handlerButtonIncrementClick);
