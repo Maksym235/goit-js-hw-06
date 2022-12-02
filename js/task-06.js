@@ -1,8 +1,3 @@
-// 1 отримати посилання на інпут
-// 2 повісити слухача блюр на інтут
-// 3 додати перевірку велью інпута мін 6 символів
-// 4 стилізувати бордер
-
 const input = document.querySelector("#validation-input");
 
 input.addEventListener("blur", onInputBlur);
