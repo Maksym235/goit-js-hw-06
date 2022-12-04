@@ -7,8 +7,8 @@ function onButtonSubmit(event) {
   const {
     elements: { email, password },
   } = event.currentTarget;
-  if (!(email.value && password.value)) {
-    alert(`Please fill in all the fields!`);
+  if (!(email.value.trim() && password.value.trim())) {
+    return alert(`Please fill in all the fields!`);
   }
 
   const result = {
